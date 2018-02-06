@@ -6,22 +6,29 @@ img{
     max-width: 100%;
 }
     
-
-.navbar {
-    /* background-image: url('img/header/nav-pic.jpg'); */
+.header{
+    position: fixed;
+    z-index: 30;
     width: 100%;
     height: 200px;
+    top: 0;
+    left: 0;
+}
+.navbar {
+    background-image: url('../img/header/nav-pic.jpg');
+    width: 100%;
+    height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 25px;
     font-family: 微軟正黑體;
     color: white;
     letter-spacing: 10px;
-    font-weight: bolder;   
+    font-weight: bolder;
+    background-position: center;   
 }
 .nav_container{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2)
 }
 .navbar-nav {
     display: flex;
@@ -30,13 +37,19 @@ img{
     width: 85%;
     height: 150px;
     margin: auto;
-    
+}
+.navbar-brand{
+    display: none;
 }
 .nav-item {
     padding: 10px;
+    width: 200px;
+    text-shadow: -0.5px 0 , 0 0.5px #B0CFD5, 0.5px 0 #B0CFD5, 0 -0.5px;
+    text-align: center;
 }
+
 .nav-link {
-    color: white !important ;
+    color: #231816 !important ;
     
 }
 .navlogo img {
@@ -51,6 +64,7 @@ img{
     letter-spacing: 25px;
     font-family: 標楷體;
     /* 字型記得改英文 */
+    background-color: white;
 }
 
 /* swiper */
@@ -59,6 +73,9 @@ img{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 150px;
+    /* border: solid 1px #3C87A9; */
+    box-shadow: 0 0 2px gray;
 }
 .swiper-slide {
     text-align: center;
@@ -99,12 +116,24 @@ img{
 .icon{
     display: inline-block;
     margin-left: 50px;
-    padding: 3px;
+    padding: 7px;
 }
 .icon img{
     width: 50px;
     height: 50px;   
 }
 .copyright{
-    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 376px) {
+    .navbar-brand{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    .navlogo{
+        display: none;
+    }
 }
