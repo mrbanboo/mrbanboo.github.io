@@ -9,12 +9,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- header -->
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
@@ -57,47 +55,78 @@
     </div>
     <!-- header -->
 
-    <!-- container -->
-    <div class="index_container">
-        <div class="container">
-            <!-- Swiper -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slider img1">
-                            <img src="img/slider/slider-01.jpg" alt="">
-                        </div>
+    <div class="container-fluid story_container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story" aria-selected="true">
+                    <div class="tab_img">
+                        <img src="img/btn/btn-01.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="slider img2">
-                            <img src="img/slider/slider-02.jpg" alt="">
-                        </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="belive-tab" data-toggle="tab" href="#belive" role="tab" aria-controls="belive" aria-selected="false">
+                    <div class="tab_img">
+                        <img src="img/btn/btn-02.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="slider img3">
-                            <img src="img/slider/slider-03.jpg" alt="">
-                        </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="aims-tab" data-toggle="tab" href="#aims" role="tab" aria-controls="aims" aria-selected="false">
+                    <div class="tab_img">
+                        <img src="img/btn/btn-03.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="slider img4">
-                            <img src="img/slider/slider-02.jpg" alt="">
-                        </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="
+                history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">
+                    <div class="tab_img">
+                        <img src="img/btn/btn-04.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="slider img5">
-                            <img src="img/slider/slider-05.jpg" alt="">
-                        </div>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="story" role="tabpanel" aria-labelledby="story-tab">
+                <div class="row">
+                    <div class="col">
+                        <img src="" alt="">
+                    </div>
+                    <div class="col word">
+                        一個鄉野時尚的堅持，徹底展現台灣道地精神， 歷經無數次失敗，秉著堅定永不放棄的態度， 追尋自己的堅持 自己的夢。 巧妙運用桂竹與孟宗竹之特性 [韌性] Mr. Banboo 原竹手作 眼鏡 就此油然而生。
                     </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="tab-pane fade" id="belive" role="tabpanel" aria-labelledby="belive-tab">
+                <img src="" alt="">
+                <div class="word">
+                    Mr. Banboo & Mr. Bamboo 兩者發音雖然相似對我們來說 意義卻是大大不同 <br>n與m的不同在於 一道成功之門或令人左右不定的分岔路 <br>而我們只要 n 一道成功之門 專注而不分心 。
+                </div>
+            </div>
+            <div class="tab-pane fade" id="aims" role="tabpanel" aria-labelledby="aims-tab">
+                <div class="row">
+                    <div class="col">
+                        <img src="" alt="">
+                    </div>
+                    <div class="col word">
+                        <h3>目標</h3>
+                        <br>1: 手工限量 Mr. Banboo正港ㄟ台灣手工眼鏡。
+                        <br>2: 把台灣手工眼鏡推向國際化， 不讓國外手工眼鏡品牌，專美於前。
+                        <br>
+                        <br>
+                        <h3>願景</h3>
+                        <br>1.讓愈多人戴上我們共同堅持的故事，激發心中的【三公分的哲學】。 2.能讓更多農友、竹農二度就業，我想這會是我們真心想要做的事。 希望戴我做的眼鏡的人，都能擁有 {三公分的哲學}。 夢想再遠 堅持
+                        就能走到底
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+
             </div>
         </div>
     </div>
-    <!-- container -->
 
     <!-- footer -->
     <div class="footer">
@@ -117,33 +146,12 @@
     </div>
     <!-- footer -->
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
 
     <script>
         $(".story").hover(function () {
