@@ -9,7 +9,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -61,31 +63,25 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story" aria-selected="true">
-                    <div class="tab_img">
-                        <img src="img/btn/btn-01.png" alt="">
-                    </div>
+                    <img src="img/btn/btn-01.png" alt="">
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="aims-tab" data-toggle="tab" href="#aims" role="tab" aria-controls="aims" aria-selected="false">
-                    <div class="tab_img">
-                        <img src="img/btn/btn-02.png" alt="">
-                    </div>
+                    <img src="img/btn/btn-02.png" alt="">
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="
                 history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">
-                    <div class="tab_img">
-                        <img src="img/btn/btn-03.png" alt="">
-                    </div>
+                    <img src="img/btn/btn-03.png" alt="">
                 </a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="story" role="tabpanel" aria-labelledby="story-tab">
                 <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center" data-aos="zoom-in-up" data-aos-duration="3000">
                         <img class="img-fluid" src="img/story/story.jpg" alt="">
                     </div>
                     <div class="col word">
@@ -102,7 +98,7 @@
             </div>
             <div class="tab-pane fade" id="aims" role="tabpanel" aria-labelledby="aims-tab">
                 <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center" data-aos="zoom-in-down" data-aos-duration="3000">
                         <img class="img-fluid" src="img/story/aims.jpg" alt="">
                     </div>
                     <div class="col-md-6 word">
@@ -151,6 +147,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <script>
         $(".story").hover(function () {
@@ -175,7 +172,15 @@
         });
     </script>
 
-    
+    <!-- AOS -->
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <!-- AOS -->
+
+
 </body>
 
 </html>

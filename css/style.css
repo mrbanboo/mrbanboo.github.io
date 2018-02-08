@@ -67,11 +67,14 @@
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 26px;
 }
-.tab_img img{
+li.nav-item img{
     width: 150px;
 }
 .word{
     font-size: 22px;
+}
+.nav-tabs .nav-link, .nav-tabs{
+    border: 0;
 }
 
 /* footer */
@@ -172,6 +175,7 @@
     margin-right: auto;
 }
 
+
 /* history */
 
 /* history */
@@ -261,7 +265,31 @@
     font-weight: bolder;
     letter-spacing: 5px;
 }
-
+/* auto type */
+.text-js{
+    opacity: 0;
+}
+.cursor{
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -5px;
+    width: 2px;
+    /* Change colour of Cursor Here */
+    background-color: white;
+    z-index: 1;
+    animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+/* auto type */
 /* service */
 
 /* contact */
@@ -310,14 +338,15 @@
 
 
 @media screen and (max-width: 1200px) {
-    .navbar-brand{
+    .navbar-brand img{
         display: block;
         width: 130px;
         height: 130px;
     }
-    .navlogo{
+    /* .navlogo{
         display: none;
-    }
+    } */
+
     .name{
         font-size: 33px;
         letter-spacing: 3px;
@@ -336,8 +365,18 @@
     .address{
         margin-bottom: 10px;
     }
-}
 
+    .eye_slogan h2{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar-brand{
+        display: block;
+        width: 130px;
+        height: 130px;
+    }
+}
 @media screen and (max-width: 750px) {
     .navbar-brand{
         display: block;

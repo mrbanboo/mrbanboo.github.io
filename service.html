@@ -63,16 +63,12 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item ">
                 <a class="nav-link active" id="eye-tab" data-toggle="tab" href="#eye" role="tab" aria-controls="eye" aria-selected="true">
-                    <div class="tab_img">
-                        <img src="img/btn/btn-04.png" alt="">
-                    </div>
+                    <img src="img/btn/btn-04.png" alt="">
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="test-tab" data-toggle="tab" href="#test" role="tab" aria-controls="test" aria-selected="false">
-                    <div class="tab_img">
-                        <img src="img/btn/btn-05.png" alt="">
-                    </div>
+                    <img src="img/btn/btn-05.png" alt="">
                 </a>
             </li>
         </ul>
@@ -80,7 +76,10 @@
             <div class="tab-pane fade show active" id="eye" role="tabpanel" aria-labelledby="eye-tab">
                 <div class="eye_container">
                     <div class="eye_slogan">
-                        <h2>自己的眼鏡，自己設計、自己的眼鏡，自己調整</h2></div>
+                        <div class="type-js headline">
+                            <h2 class="text-js">自己的眼鏡，自己設計、自己的眼鏡，自己調整</h2>
+                        </div>
+                    </div>
                     <!-- Swiper -->
                     <!-- <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -321,6 +320,44 @@
             });
         });
     </script>
+
+    <!-- auto type -->
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the 
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.   
+            autoType(".type-js", 200);
+        });
+    </script>
+    <!-- auto type -->
 </body>
 
 </html>
