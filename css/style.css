@@ -102,6 +102,7 @@
     color: white;
     font-size: 18px;
 }
+/* footer */
 
 /* swiper */
 .index_container .swiper-container {
@@ -181,7 +182,7 @@
     display: flex;
     justify-content: space-around;
 }
-.service_container .swiper-container {
+/* .service_container .swiper-container {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -191,9 +192,96 @@
     background-size: cover;
     width: 500px;
     height: 500px;
+} */
+
+.product_nav ul {
+    list-style-type: none;
+}
+.product_nav .nav {
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 0; 
+}
+.product_nav .nav li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #333;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.product_nav .nav_item{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.product_nav .nav .active {
+    color: #fff;
+    background-color: #21b384;
+}
+.product_nav .nav_item li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.dowebok {
+    width: 1000px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.filtr-item {
+    display: inline-block;
+    width: 25%;
+    padding: 10px;
+}
+.filtr-item img {
+    width: 100%;
 }
 /* service */
 
+/* contact */
+.contact_container{
+    position: relative;
+}
+.contact_box{
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5%;
+    width: 80%;
+}
+.name{
+    font-family: 微軟正黑體;
+    font-size: 35px;
+    font-weight: bolder;
+    padding:30px;
+    letter-spacing: 5px;
+}
+.phone{
+    font-size: 30px;
+    font-weight: bolder;
+    padding:30px;
+    font-family: 微軟正黑體;
+    letter-spacing: 5px;
+}
+.time{
+    font-family: 微軟正黑體;
+    font-size: 25px;
+    font-weight: bolder;
+    padding:10px;
+    letter-spacing: 5px;
+}
+.timet{
+    letter-spacing: 10px;
+}
+.follow{
+    width: 80px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+/* contact */
 
 
 @media screen and (max-width: 376px) {
