@@ -132,9 +132,9 @@
     -webkit-align-items: center;
     align-items: center;
 }
-.index_container .slider {
+.index_container .slider img{
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
