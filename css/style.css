@@ -338,9 +338,9 @@ Main Components
   border-color: #7b9d6f;
 }
 @media only screen and (min-width: 1100px) {
-  .cd-horizontal-timeline {
+  /* .cd-horizontal-timeline {
     margin: 6em auto;
-  }
+  } */
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
@@ -503,6 +503,7 @@ Main Components
   }
   .cd-horizontal-timeline .events-content p {
     font-size: 1.8rem;
+    text-align: center;
   }
 }
 
@@ -593,9 +594,10 @@ ul.cd-timeline-navigation{
 }
 .cd-horizontal-timeline{
     background-image: url('../img/timeline/timeline_bgi.jpg');
-    background-position: 95% 50%;
+    background-position: 0 90%;
     background-size: cover;
     margin-bottom: 0;
+    min-height: 800px;
 }
 .events-content img {
     display: flex;
