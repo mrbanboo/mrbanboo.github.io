@@ -159,7 +159,14 @@ li.nav-item img{
 .story_container{
     margin-top: 200px;
     letter-spacing: 5px;
+    background-image: url('../img/timeline/timeline_bgi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #E9DBC1;
+}
+
 .story_container ul{
     display: flex;
     justify-content: space-around;
@@ -177,7 +184,6 @@ li.nav-item img{
     margin-left: auto;
     margin-right: auto;
 }
-
 
 /* history */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
@@ -585,7 +591,7 @@ ul.cd-timeline-navigation{
     list-style: none;
 }
 .cd-horizontal-timeline{
-    background-image: url('../img/timeline/timeline_bgi.jpg');
+    /* background-image: url('../img/timeline/timeline_bgi.jpg'); */
     background-position: 0 90%;
     background-size: cover;
     margin-bottom: 0;
@@ -606,8 +612,8 @@ ul.cd-timeline-navigation{
 .service_container{
     margin-top: 200px;
     /* background-image: url('../img/contant/contact-.jpg'); */
+    background-image: url('../img/timeline/timeline_bgi.jpg');
     background-size: cover;
-    padding: 0 0 100px 0;
     color: rgba(0, 0, 0, 0.3);
     text-shadow: -0.5px 0 , 0 0.5px #B0CFD5, 0.5px 0 #B0CFD5, 0 -0.5px;
 }
@@ -666,6 +672,9 @@ ul.cd-timeline-navigation{
     font-size: 20px;
     margin: 0 auto;
 }
+.dowe_container{
+    min-height: 1500px;
+}
 .filtr-item {
     display: inline-block;
     width: 25%;
@@ -715,13 +724,13 @@ ul.cd-timeline-navigation{
 /* contact */
 .contact_container{
     position: relative;
-    background-image: url("../img/contant/contact-.jpg");
+    background-image: url("../img/timeline/timeline_bgi.jpg");
     background-size: cover;
     padding: 300px 0 100px 0;
 }
 .contact_box{
     margin:0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
     padding: 5%;
     width: 80%;
 }
